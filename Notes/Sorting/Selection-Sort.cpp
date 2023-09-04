@@ -8,16 +8,23 @@ void Selection(vector <int> vec)
 {
     for (int i = 0; i < vec.size() - 1; i++)
     {
+        int minindex = i;
+
         for (int j = i + 1; j < vec.size(); j++)
         {
-            if(vec[j] < vec[i])
+            if(vec[j] < vec[minindex])
             {
-                int temp = vec[j];
-
-                vec[j] = vec[i];
-
-                vec[i] = temp;
+                minindex = j;
             }
+        }
+
+        if(minindex != i)
+        {
+            int temp = vec[minindex];
+
+            vec[minindex] = vec[i];
+
+            vec[i] = temp;
         }
         
     }
