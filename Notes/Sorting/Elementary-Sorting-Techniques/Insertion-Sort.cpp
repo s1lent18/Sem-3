@@ -4,6 +4,10 @@ using namespace std;
 
 // Insert an element from unsorted array to its correct position in sorted array
 
+// Best Case Senario: O(n)
+// Average Case Senario: O(n ^ 2)
+// Worst Case Senario: O(n ^ 2)
+
 void Insertion(vector <int> vec)
 {
     for (int i = 1; i < vec.size(); i++)

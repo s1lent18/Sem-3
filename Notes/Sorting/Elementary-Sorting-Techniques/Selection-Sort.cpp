@@ -4,6 +4,12 @@ using namespace std;
 
 // Find the minimum element in the unsorted array and swap it with element at beginning
 
+// Best Case Senario: O(n ^ 2)
+// Average Case Senario: O(n ^ 2)
+// Worst Case Senario: O(n ^ 2)
+
+// Space Complexity: O(1)
+
 void Selection(vector <int> vec)
 {
     for (int i = 0; i < vec.size() - 1; i++)

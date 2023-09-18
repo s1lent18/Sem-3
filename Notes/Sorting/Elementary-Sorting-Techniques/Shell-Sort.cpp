@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
 
+// Best Case Senario: O(n log(n))
+// Average Case Senario: O(n log(n))
+// Worst Case Senario: O(n^2)
+
+// Space Complexity: O(1)
+
 void shellsort(int * ptr, int size)
 {
     for(int gap = size / 2; gap > 0; gap /= 2)

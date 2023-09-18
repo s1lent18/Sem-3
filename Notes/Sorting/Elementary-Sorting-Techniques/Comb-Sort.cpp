@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
 
+// Best Case Senario: O(n log(n))
+// Average Case Senario: 0(n^2/2^p); where p is the number of increments
+// Worst Case Senario: 0(n ^ 2)
+
+// Space Complexity: O(1)
+
 int getNextGap(int gap)
 {
     gap = (gap * 10) / 13;
