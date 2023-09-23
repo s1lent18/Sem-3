@@ -68,14 +68,16 @@ class LinkedList
         {
             Node * temp = head;
 
+            cout << endl;
+
             while(temp != NULL)
             {
-                cout << "Values: " << temp->data << endl;
+                cout << temp->data << " -> ";
 
                 temp = temp->next;
             }
 
-            cout << endl << endl;
+            cout << "NULL"<< endl << endl;
         }
 
         void deleteathead();
@@ -83,12 +85,9 @@ class LinkedList
         void deletebyvalue(int value);
         void deleteatindex(int index);
         void insertaftervalue(int value, int aftervalue);
-        Node * swap(Node *, Node *);
-        void getsize();
-        void bubblesort();
         void reverseitirative();
+        void sort();
         Node * reverserecursive(Node *);
-
 
 };
 
