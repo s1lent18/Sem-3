@@ -87,6 +87,8 @@ class LinkedList
         void insertaftervalue(int value, int aftervalue);
         void reverseitirative();
         void sort();
+        void Evenodd(Node *&, Node *&, int, int);
+        void run();
         Node * reverserecursive(Node *);
 
 };
