@@ -51,19 +51,56 @@ void LinkedList :: deleteattail()
     delete del;
 }
 
-int main()
+void LinkedList :: deleteatindex(int index)
 {
-    LinkedList * T = new LinkedList();
+    Node * temp = head;
 
-    T->insertattail(1);
-    T->insertattail(2);
-    T->insertattail(3);
-    T->insertattail(4);
-    T->insertattail(5);
+    int count = 0;
 
-    T->displayforward();
+    if(index == 0)
+    {
+        deleteathead();
+    }
 
-    T->deleteattail();
+    while(temp->next != NULL)
+    {
+        if(count == index)
+        {
+            Node * del = temp;
 
-    T->displayforward();
+            temp->prev->next = temp->next;
+
+            temp->next->prev = temp->prev;
+
+            delete del;
+        }
+        temp = temp->next;
+
+        count++;
+    }
+}
+
+void LinkedList :: deletebyvalue(int value)
+{
+    if(head->data == value)
+    {
+        deleteathead();
+    }
+
+    Node * temp = head;
+
+    while(temp != NULL)
+    {
+        if(temp->data == value)
+        {
+            Node * del = temp;
+
+            temp->prev->next = temp->next;
+
+            temp->next->prev = temp->prev;
+
+            delete del;
+        }
+        temp = temp->next;
+    }
 }

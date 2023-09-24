@@ -73,10 +73,12 @@ class LinkedList
 
             while(temp != NULL)
             {
-                cout << "Values: " << temp->data << endl;
+                cout << temp->data << " -> ";
 
                 temp = temp->next;
             }
+
+            cout << "NULL" << endl;
         }
 
         void displaybackwards()
@@ -87,15 +89,18 @@ class LinkedList
             {
                 temp = temp->next;
             }
+            
+            cout << "NULL <- "; 
 
             while(temp != head)
             {
-                cout << "Values: " << temp->data << endl;
+                cout << temp->data << " <- ";
 
                 temp = temp->prev;
             }
 
-            cout << "Values: " << temp->data << endl; 
+            cout << temp->data << endl;
+
         }
 
         void deleteathead();
@@ -103,6 +108,10 @@ class LinkedList
         void deletebyvalue(int value);
         void deleteatindex(int index);
         void insertaftervalue(int after, int value);
+        void merge(LinkedList *);
+        void sort();
+        void reverserecursive(Node *);
+        void reverse();
 
 };
 
