@@ -114,7 +114,7 @@ int main()
         knights /= 2;
     }
 
-    cout << ans << endl << knights << endl;
+    cout << "The chess board is of: " << ans << " * " << ans << endl << "The number of knights to be placed: " << knights << endl;
 
     int ** array = new int*[ans];
 
