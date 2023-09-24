@@ -65,8 +65,6 @@ void nKnights(int ** arr, int numberofknights, int row, int col, int numberofsqu
     if(numberofknights == 0)
     {
         printsolution(arr, numberofsquares);
-
-        //exit(1);
     }
 
     if(row == numberofsquares - 1 && col == numberofsquares)
