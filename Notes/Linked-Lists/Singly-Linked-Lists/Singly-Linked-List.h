@@ -89,6 +89,7 @@ class LinkedList
         void sort();
         void Evenodd(Node *&, Node *&, int, int);
         void run();
+        void merge(LinkedList *);
         Node * reverserecursive(Node *);
 
 };
