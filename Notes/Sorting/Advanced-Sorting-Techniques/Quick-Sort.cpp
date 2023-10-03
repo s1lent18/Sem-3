@@ -41,13 +41,3 @@ void print(int arr[], int size)
         cout << arr[i] << endl;
     }
 }
-
-
-int main()
-{
-    int arr[5] = {1, 32, 4, 54, 2};
-
-    QuickSort(arr, 0, 4);
-
-    print(arr, 5);
-}
