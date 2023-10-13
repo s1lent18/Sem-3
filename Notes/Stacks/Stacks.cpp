@@ -83,6 +83,4 @@ int main()
         cout << S.Top();
         S.pop();
     }
-
-    
 }
