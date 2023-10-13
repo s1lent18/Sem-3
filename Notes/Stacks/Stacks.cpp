@@ -60,27 +60,37 @@ class Stack
             return top == -1;
         }
 
+        void print()
+        {
+            for(int i = 0; i < size; i++)
+            {
+                cout << Top() << endl;
+
+                pop();
+            }
+        }
+
 
 };
 
-int main()
-{
-    string input;
+// int main()
+// {
+//     string input;
 
-    cout << "Enter a string: " ;
+//     cout << "Enter a string: " ;
 
-    cin >> input;
+//     cin >> input;
 
-    Stack <char> S(input.length());
+//     Stack <char> S(input.length());
 
-    for(int i = 0; i < input.length(); i++)
-    {
-        S.push(input[i]);
-    }
+//     for(int i = 0; i < input.length(); i++)
+//     {
+//         S.push(input[i]);
+//     }
 
-    for(int i = 0; i < input.length(); i++)
-    {
-        cout << S.Top();
-        S.pop();
-    }
-}
+//     for(int i = 0; i < input.length(); i++)
+//     {
+//         cout << S.Top();
+//         S.pop();
+//     }
+// }
