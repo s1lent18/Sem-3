@@ -82,7 +82,7 @@ class Stacks
     private:
         LinkedList * L;
         int top;
-        
+
     public:
         Stacks()
         {
@@ -118,17 +118,17 @@ class Stacks
         }
 };
 
-int main()
-{
-   Stacks * S = new Stacks();
+// int main()
+// {
+//    Stacks * S = new Stacks();
 
-   S->push(1);
-   S->push(2);
-   S->push(3);
-   cout << S->Top() << endl;
-   S->pop();
-   cout << S->Top() << endl;
-   S->pop();
-   cout << S->Top() << endl;
-   S->pop();
-}
+//    S->push(1);
+//    S->push(2);
+//    S->push(3);
+//    cout << S->Top() << endl;
+//    S->pop();
+//    cout << S->Top() << endl;
+//    S->pop();
+//    cout << S->Top() << endl;
+//    S->pop();
+// }
