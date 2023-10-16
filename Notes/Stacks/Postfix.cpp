@@ -1,10 +1,12 @@
 #include "Stacks.cpp"
 #include <cmath>
-int prefix(string input)
+using namespace std;
+
+int postfix(string input)
 {
     Stack <int> S(input.length());
 
-    for(int i = input.length() - 1; i >= 0; i--)
+    for(int i = 0; i < input.length(); i++)
     {
         if(input[i] >= '0' && input[i] <= '9')
         {
@@ -12,12 +14,12 @@ int prefix(string input)
         }
         else
         {
-            int op1 = S.Top();
-            S.pop();
-
             int op2 = S.Top();
             S.pop();
 
+            int op1 = S.Top();
+            S.pop();
+            
             switch (input[i])
             {
             case '+':
@@ -45,13 +47,4 @@ int prefix(string input)
             }
         }
     }
-
-    return S.Top();
 }
-
-// int main()
-// {
-//     cout << prefix("-+7*45+20") << endl;
-
-//     return 0;
-// }
