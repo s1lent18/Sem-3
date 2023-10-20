@@ -1,6 +1,6 @@
 #include "Stacks.cpp"
 #include <cmath>
-int prefix(string input)
+int prefixcalculation(string input)
 {
     Stack <int> S(input.length());
 
