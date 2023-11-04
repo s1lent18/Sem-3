@@ -1,0 +1,121 @@
+Graph Terminology:
+    -Simple Graphs:
+        * undirected edges
+        * multiple edges not allowed
+        * self loops not allowed
+
+    - Multi Graphs
+        * undirected edges
+        * multiple edges are allowed
+        * self loops not allowed
+
+    - Pseudograph Graphs
+        * undirected edges
+        * multiple edges are allowed
+        * self loops are allowed
+
+    - Simple Directed Graphs
+        * directed edges
+        * multiple edges not allowed
+        * self loops not allowed
+
+    - Directed Multi Graphs
+        * directed edges
+        * multiple edges are allowed
+        * self loops are allowed
+
+    - Mixed Graphs
+        * undirected and directed edges
+        * multiple edges are allowed
+        * self loops are allowed
+
+Definitions:
+    adjacent and incident:
+        Two vertices are "adjacent" of each other in a graph when there is an edge between them
+        and the edge connecting the two vertices is called an "incident"
+    
+    Degree:
+        The number of vertices connected to a specific vertex is called the degree of that vertex
+        in the case of a self loop the degree is considered "2" i.e (1 in and 1 out)
+
+Hand-Shaking Theorem:
+    the sum of degrees of all the vertices must be equal to the twice number of edges
+    i.e the total degree of a graph must be even
+
+    an undirected graph has an even number of vertices with odd degrees
+
+Directed Graphs:
+    the in-degree of a vertex is denoted by deg- (name of the vertex)
+    the out-degree of a vertex is denoted by deg+ (name of the vertex)
+
+Special Simple Graphs:
+    
+    - Complete Graphs:
+        * a simple graph that contains exactly one edge between each pair of distinct vertices
+
+    - Wheels and Cycles
+        * Consists more than 3 vertices (see photo 1)
+        * Consists of more than 3 vertices with 1 in the center connected to all the other vertices
+          (see photo 2)
+
+Bipartite Graphs:
+    in simple words the adjacent nodes of a Bipartite graph must be representated with different
+    colors
+
+Adjacency Lists:
+    an Adjacency list can be used to represent a graph with no multiple edges by specifying the
+    vertices that are adjacent to each vertex of the graph
+
+    an Adjacency list for an undirected graph:
+        the column for vertices is named "vertices" and the second column will be named 
+        "Adjacent vertices"
+
+        the column for vertices is named "Initial Vertex" and the second column will be named
+        "Teminal vertices"
+    
+Adjacency Matrices:
+    each index represent the number of nodes connected to it
+    in other words adjacency matrices will be transpose.
+
+Incidence Matrices:
+    The rows going from top to bottom represent vertices and the columns going left to right
+    represent edges
+
+                x ---------------------------------------------------------------- x
+
+Paths:
+    a path is a sequence of edges that begins at a vertex of a graph and travels from vertex
+    to vertex along edges of the graph. As the graph travels along its edges, it visits the
+    vertices along this path, that is, the endpoints of these.
+
+Euler Graphs:
+    
+    - Euler Paths:
+        Euler path is a simple path containing every edge of the graph
+    - Euler Circuit:
+        * Euler Circuit is a simple circuit containing every edge of the graph
+        * A connected multigraph with atleast two vertices has an euler circuit iff each of its 
+          vertices has an even degree and it has an euler path iff it has exacly two vertices of
+          odd degree
+
+Hamilton Graphs:
+
+    - Hamilton Paths:
+        A simple graph in a graph that passes through every vertex exactly once is called a 
+        Hamilton Path
+    - Hamilton Circuit:
+        A simple circuit in a graph that passes through every vertex exacly once is called a 
+        Hamilton Circuit
+
+        Dirac's Theorem:
+            if a simple graph have more than or equals to 3 vertices and the degree of each
+            vertex is greater than equals to the number of vertices / 2.
+
+        Ore's Theorem:
+            if a simple graph have more than or equals to 3 vertices and the sum of degree of non
+            adjacent vertices must be greater than or equals to the number of vertices
+
+        x ---------------------------------------------------------------------------- x
+
+Planar Graphs:
+    a graph is called planar if it can be drawn in the plane without any edges crossing.
