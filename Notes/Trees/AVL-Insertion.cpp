@@ -123,7 +123,7 @@ Node * insert(Node * root, int data)
         }
 
         // Case-2 -> Right-Right Case:
-        if(balance > -1 && data > root->right->data)
+        if(balance < -1 && data > root->right->data)
         {
             return rotateleft(root);
         }
@@ -157,16 +157,16 @@ void preorder(Node * n)
     preorder(n->right);
 }
 
-// int main()
-// {
-//     Node * root;
+int main()
+{
+    Node * root;
 
-//     root = insert(root, 10);
-//     root = insert(root, 20);
-//     root = insert(root, 30);
-//     root = insert(root, 40);
-//     root = insert(root, 50);
-//     root = insert(root, 25);
+    root = insert(root, 10);
+    root = insert(root, 20);
+    root = insert(root, 30);
+    root = insert(root, 40);
+    root = insert(root, 50);
+    root = insert(root, 25);
 
-//     preorder(root);
-// }
+    preorder(root);
+}
