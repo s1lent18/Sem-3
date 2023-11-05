@@ -1,0 +1,82 @@
+Chapter 6: Conditional Processing
+
+Conditional Branching:
+    A programming language that permits decision making lets you alter the flow of control
+    using a technique known as "Conditional Branching"
+
+Boolean Instructions:
+    - AND  || and operation between a source operand and a destination operand
+    - OR   || or operation between a source operand and a destination operand
+    - XOR  || exclusive or operation between a source operand and a destination operand 
+    - NOT  || not operation on the destination operand
+    - TEST || Implied and operation between a source and destination operand, setting The
+              CPU flags appopriately
+
+
+    CPU Status Flags:
+        - boolean intructions affect zero, carry, sign, overflow and parity flags.
+        - The zero flag is set when the result of an operation equals to 0.
+        - The carry flag is set when the operation generates a carry out of the highest bit of
+        the destination operand
+        - The sign flag is the copy of the high bit of the destination operand, indicating that
+        it is negative if it is set and positive if clear.
+        - The overflow flag is set when an instruction generates a result that is outside the 
+        signed range of the destination operand
+        - The parity flag is set when an instruction generates an even number of 1 bits in the low
+        byte of the destination operand
+
+    Syntax for AND:
+        and destination, source
+        Allowed Synatax:
+            and register, register
+            and register, mem
+            and register, imm
+            and mem, register
+            and mem, imm
+            "Operand must be of the same size"
+            The and instruction always clears the carry and the overflow flags. It modifies the
+            sign, zero, and the parity flags in a way that is consistent with the value assigned  
+            to the destination operand
+
+    Syntax for OR:
+    or destination, source
+        Allowed Syntax:
+            or register, register
+            or register, mem
+            or register, imm
+            or mem, register
+            or mem, imm
+            "Operand must be of the same size"
+            The or instruction always clears the carry and the overflow flags. It modifies the sign,
+            zero, and the parity flags in a way that is consistent with the value assigned to the 
+            destination operand
+
+    Syntax for XOR:
+        xor destination, source
+        The xor flag always clears the overflow and the carry flags. It modifies the sign, zero and 
+        parity flags in a way that is consistent with the value assigned to the destination operand.
+
+    Syntax for NOT:
+        not destination
+        Allowed Syntax:
+            not register
+            not mem
+        
+        the not instruction inverts all bits in an operand[one's complement]
+        no flags are affected by the not instruction
+
+    TEST Instruction:
+        - performs an implied and operation between corresponding bits in the two operands 
+          and subroutines the flags without modifying either operand.
+    
+        - It sets the sign, zero, and parity flags based on the value assigned to the destination
+          operand
+
+        - The test instruction permits the same operand combinations as the and instruction
+
+        - test is particularly valuable for finding out whether individuals bits in an operand
+          are set.
+
+Comparison Instruction:
+
+
