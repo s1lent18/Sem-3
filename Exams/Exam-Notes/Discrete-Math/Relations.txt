@@ -108,3 +108,20 @@ Matrix Representation:
         - Trasitive:
 
             The square matrix must be equal to its square.
+
+
+Partial Order Relations:
+
+    - Parial order relations denoted ≤
+    - It is reflexive, meaning that every element is related to itself(a ≤ a for all 
+      elements in the set)
+    - It is antisymmetric, meaning if a ≤ b and b ≤ a then a must be equals to B
+    - It is trasitive, meaning that is a ≤ b and b ≤ c, then a ≤ c
+
+Complete Order Relations:
+
+    - It is a special case of Parial order relations
+    - It is reflexive, meaning that every element is related to itself(a ≤ a for all 
+      elements in the set)
+    - It is symmetric, meaning if a ≤ b then b must be ≤ a. 
+    - It is trasitive, meaning that is a ≤ b and b ≤ c, then a ≤ c
