@@ -31,6 +31,16 @@ Spanning Trees:
     Let G be a simple graph. A spanning tree of G is a subgraph of G that is a tree coontaining
     every vertex of G.
 
+    Depth-First Search/BackTracking:
+
+        - choose the root vertex for a rooted graph.
+        - create an edge by connecting the current vertex to an incident vertex.
+        - From the new vertex, repeat step 2 until you can no longer connect any vertices.
+        - If all vertices have been visited, you have a spanning tree. If not, go to the
+          next-to-last visited vertex to form a new path from the vertex.
+        - Continue visiting the next-to-last vertex of the current vertex untill all vertices
+          have been visited.
+
 Minimum spanning tree:
     A minimum spanning tree in a connected weighted graph is a spanning tree that has the smallest
     possible sum of weights of its edges
