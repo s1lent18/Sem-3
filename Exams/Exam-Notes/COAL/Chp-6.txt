@@ -79,4 +79,81 @@ Boolean Instructions:
 
 Comparison Instruction:
 
+        - Assembly uses cmp instruction to compare integers 
+
+          Syntax:
+                cmp destination, source
+
+          Allowed Syntax:
+                cmp register, register
+                cmp register, mem
+                cmp register, imm
+                cmp mem, register
+                cmp mem, imm
+
+          Working:
+                * if source is greater than destination then carry flag is set
+                  and zero flag is cleared
+
+                * if destination is greater than source then both the flags are cleared
+
+                * is destination is equals to source then zero flag is set and carry
+                  flag is cleared
+
+            Unsigned:
+                * if source is greater than destination then sign and overflow flags are not equal
+
+                * if destination is greater than source then sign and overflow flags are equal.
+
+                * is destination is equals to source then zero flag is set
+
+        - to clear the zero flag the register can be OR'ed with 1
+
+        - stc sets the carry flag
+
+        - clc clears the carry flag
+
+        - to clear the overflow flag the register can be OR'ed with 0       
+
+        - incrementing the register when its already storing the maximum possible value will 
+          set the overflow flag
+
+Conditional Jumps:
+
+    - JC   = jump if carry flag is set
+    - JNC  = jump if carry flag is cleared
+    - JZ   = jump if zero flag is set
+    - JNZ  = jump if zero flag is cleared
+    - JO   = jump if overflow flag is set
+    - JNO  = jump if overflow flag is cleared
+    - JS   = jump if signed flag is set
+    - JNS  = jump if signed flag is cleared
+    - JP   = jump if parity flag is even
+    - JNP  = jump if parity flag is odd
+    - JE   = jump if leftoperand is equal to rightoperand
+    - JNE  = jump if leftoperant is not equal to rightoperand
+    - JCX  = jump if CX = 0
+
+Unsigned Conditional Jumps:
+
+    - JA   = jump if leftoperand > rightoperand
+    - JNBE = same as JA
+    - JAE  = jump if leftoperand >= rightoperand
+    - JNB  = same as JAE
+    - JB   = jump if leftoperand < rightoperand
+    - JNAE = same as JB
+    - JBE  = jump if leftoperand <= rightoperand
+    - JNA  = same as JBE
+
+signed Conditional Jumps:
+
+    - JG   = jump if leftoperand > rightoperand
+    - JNLE = same as JG
+    - JGE  = jump if leftoperand >= rightoperand
+    - JNL  = same as JGE
+    - JL   = jump if leftoperand < rightoperand
+    - JNGE = same as JL
+    - JLE  = jump if less than or equals to leftoperand <= rightoperand
+    - JNG  = same as JLE
+                
 
