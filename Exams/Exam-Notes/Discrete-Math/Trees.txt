@@ -41,6 +41,15 @@ Spanning Trees:
         - Continue visiting the next-to-last vertex of the current vertex untill all vertices
           have been visited.
 
+    Breadth-First Search:
+        
+        - choose a root vertex for a rooted graph
+        - add all edges incident to that vertex. The newly connected vertices at level 1 in 
+          the spanning tree.
+        - From each vertex in level 1, in order, add all edges incident to the vertices that
+          are not already included in the spanning tree.
+        - Repeat adding levels and edges until all vertices have been visited.
+
 Minimum spanning tree:
     A minimum spanning tree in a connected weighted graph is a spanning tree that has the smallest
     possible sum of weights of its edges
