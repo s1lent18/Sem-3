@@ -155,5 +155,29 @@ signed Conditional Jumps:
     - JNGE = same as JL
     - JLE  = jump if less than or equals to leftoperand <= rightoperand
     - JNG  = same as JLE
-                
 
+Conditional Loop Instructions:
+
+    - Loopz Instruction:
+        the loopz instruction works just like the loop instruction except that it has one
+        additional condition: the zero flag must be set in order for control to transfer to
+        the destination label
+    
+    - loope instruction is same as loopz 
+
+    - loopnz Instruction:   
+        the loopnz instruction is the counterpart of loopz. The loop continues while
+        the unsigned value of ecx is greater than zero and the zero flag is clear
+
+    - loopne instruction is same as loopnz
+
+    - While Loop:
+        the while loop in assembly language is just the synatx difference from the original loop
+        Syntax:
+            top: cmp eax, ebx
+                jae next
+                inc eax
+                jmp top
+            next:
+
+            
