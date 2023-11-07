@@ -1,0 +1,24 @@
+Chapter 8: Advanced Procedures
+
+Stack Frames:
+
+    a stack frame is the area of the stack set aside for passed arguments, subroutines
+    return address, local variables and saved registers.
+
+    The Stack frame is created by the following sequential steps:
+        1. passed arguments, if any, are pushed on the stack
+        
+        2. The subroutines is called, causing the subroutine return address to be
+           pushed on the stack
+        
+        3. As the subroutine begins to execute, EBP is pushed on the stack
+
+        4. EBP is set equal to ESP. From this point on, EBP acts as a base reference
+           for all the subroutine parameters.
+
+        5. if there are local variables, ESP is decremented to reserve space for the
+           variables on the stack
+
+        6. if any registers need to be saved, they are pushed on the stack
+        
+         
