@@ -1,0 +1,77 @@
+
+
+Q-3[i]
+include Irvine32.inc
+.data
+val1 dword 4
+val2 dword 3
+val3 dword 10
+minvalue dword ?
+.code
+	main PROC
+		mov eax, val1
+		mov ebx, val2
+		mov ecx, val3
+
+		call Minimum
+		mov minvalue, eax
+		call writedec
+	exit
+	main ENDP
+
+Minimum proc
+	mov minvalue, eax
+	cmp minvalue, ebx
+	jb next	
+	mov minvalue, ebx	
+	cmp minvalue, ecx
+	jmp last
+	mov minvalue, ecx
+	jmp last
+	next:
+		cmp minvalue, ecx
+		jb last
+		mov minvalue, ecx
+	last:
+		mov eax, minvalue
+		ret
+Minimum ENDP
+END main
+
+Q-3[ii]
+
+include Irvine32.inc
+.data
+val1 sdword 0
+val2 sdword 3
+val3 sdword 10
+x sdword ?
+y sdword ?
+
+.code
+	main PROC
+		mov eax, val1
+		mov ebx, val2
+		top: cmp eax, ebx
+			jae l1
+			inc eax
+			cmp val3, ebx
+			je e1
+			add y, 10
+			mov edx, y
+			mov x, edx
+			e1:
+				add y, 2
+				mov edx, y
+				mov x, edx
+		jmp top
+		l1:
+		mov eax, x
+		call writedec
+		call crlf
+		mov eax, y
+		call writedec
+
+	exit
+	main ENDP
+END main
