@@ -1,0 +1,183 @@
+
+Factors contributing to mental disorders:
+
+    -Biological:
+        neurochemicals, neurotransmitters, hormones, brain, nervous system, etc
+
+    - Psychology:
+        cognitions, emotions, personality, coping styles, resilience, values, etc
+
+    - Social:
+        Social support, family relations, friends, interpersonal factors, love, affliliation
+
+    DSM: Diagnostic Statistical Manual of mental disorders
+        
+        - it is a book for disorders publised by american psychiatric association
+
+        - DSM only classifies disorders and describe the symptoms but does not explain cures
+
+    Two Major Classifications of Mental Disorders:
+
+        - Neurotic Disorders:
+
+            distressing but one can still function in society and act rationally
+            
+            Diagnostics:
+                generalized anxiety disorders
+                depression
+                OCD [Obsessive-Compulsive Disorder]
+                Social Phobia
+                PostTraumatic Stress Disorder
+                Panic Disorder
+                Anti-Social Disorder
+        
+        - Psychotic Disorders:
+
+            person loses contact with reality, experiences distorted perceptions
+            
+            Diagnostics:
+                Schizophrenia
+                Brief psychotic Disorder
+                Delusional Disorder
+                Substance-induced Psychotic Disorder
+
+        Mental disorders are usually associated with significant distress or disability
+        in social, occupational or other important activities
+
+        Major Depressive Disorder:
+
+            - also known as depression
+            - involves a depressed mood or loss of pleasure for a pro-longed period
+            - typically people feel low irrespective of the time of the day
+            - diagonosed after continous loss of interest in most of the activities after
+              atleast 2 weeks
+
+              Common Signs:
+                Sleep Disturbance
+                Suicidial Thoughts
+                guilty feelings
+                significant weight gain/loss
+            
+        Panic Disorder:
+
+            - sudden episodes of panic or fear
+            - can last for a few minutes or few hours
+            - characterized as sense of losing control even when there is no triggering element
+
+                Common Signs:
+                    Chest Pain
+                    hyperventilation
+                    sweating
+                    dizziness
+
+            - people with the panic disorder may worry about when is the next panic attack
+              gonna happen
+            - panic attacks do not have any identifiable stimuli
+            - frequent and severe panic attacks leads to the diagnosis of panic disorder
+
+        Schizophrenia:
+
+            - a mental illness that affects how a person thinks, feel, and behaves
+            - people with Schizophrenia may feel a lost touch with reality
+            - they can experience hallucinations and delusions
+            - their mental abilities may dedoriate which forces the person to withdraw
+              from social interactions
+            
+        OCD:
+
+            - causes recurring, unwanted thoughts or sensations
+            - People experience compulsions, irresistable urges to repeatedly carry out some act
+            - resisting the urges causes great distress related to dire consequences
+            - People with OCD may know that the thoughts are not realistic
+            - Diagnostics are made on:
+                
+                * presence of obsesional thoughts
+                * compulsions that are time consuming
+                * causes significant distress
+                * impair work or social funtioning
+
+            - The OCD cycle:
+
+                Obsessive thoughts -> anxiety -> Compulsive behavior -> temporary relief
+
+        PTSD:
+
+            - develops in people facing a shocking, scary, or dangerous event
+            - outcomes:
+                * hypervigiliance
+                * dreams or flashbacks of the traumatic event
+                * sleep Disturbance
+                * poor concentration
+
+            - diagnosis:
+                - requires exposure to a traumatic event
+                    * directly experiencing it
+                    * witnessing a traumatic event happening to others
+                    * getting to know about a traumatic event which involves a close relative
+                    * 
+            
+            - Previously Was Know as:
+                "Shell Shock" - WW1
+                "combat fatigue: - WW2
+
+        Bipolar Disorders:
+
+            - disorders which causes high fluctuation in one's mood and energy
+            - usually experience:
+                * over excitement and activity
+                * delusions
+                * euphoria - mania
+                * depression
+
+            - These mood swings can affect sleep, energy, activity, judgment
+              behavior and the ability to think clearly.
+
+            - these mood episodes typically occur over distinct periods of days to weeks
+            - one may feel over excited or Depressive
+
+        Internet Gaming Disorder:
+
+            - addiction of online gaming is refered to as internet gaming disorder
+            - relates to caffiene addiction
+            - causes significant impairment or distress in one's life
+            - Symptoms:
+                
+                * sadness and anxiety when trying to withdraw
+                * unsuccessfull attempts to quit gaming
+                * risk, jeopardizing personal relations or work for gaming
+                * loss of interest in other activities
+
+            - Cases of IGD rapidly increased during covid
+            - Gaming could be a symptom of an underlying problem, such as depression or anxiety,
+
+        Caffeine Use Disorder:
+
+            - Caffeine intoxication and caffeine withdrawal are included in DSM
+
+        Treatment of Psychological Disorders:
+
+            - Treatment depends on the type of mental illness its severity and what works best. 
+            - usually a  a combination of treatments is prefered
+
+            - Psychological approach:
+
+                - helping the affecties and their familes through therapy sessions
+                  including psychoanalysis, humanistic-oriented therapy,
+                  cognitive behavioral therapy (CBT),
+
+            - Biomedical approach:
+
+                - use of medinices to treat mental disorders such as schizophrenia
+                  depression, and anxiety, as well as the employment of
+                  brain intervention techniques
+                  including electroconvulsive therapy (ECT)
+                  transcranial magnetic stimulation (TMS), and psychosurgery.
+
+            - Social approach:
+
+                - The social approach to reducing disorder focuses on changing the social
+                  environment in which individuals live to reduce the underlying causes
+                  of disorder. These approaches include group, couple, and family therapy, 
+                  as well as community outreach programs. The community approach is likely to
+                  be the most effective of the three approaches because it focuses
+                  not only on treatment, but also on prevention of disorders [WHO] / 2004
