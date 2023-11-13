@@ -182,13 +182,5 @@ int main()
 {
     BST * b = new BST();
 
-    b->root = b->insert(5, b->root);
-    b->root = b->insert(2, b->root);
-    b->root = b->insert(1, b->root);
-    b->root = b->insert(4, b->root);
-    b->root = b->insert(3, b->root);
-
-    int * arr = new int[b->getsize(b->root)];
-
-    
+    b->insert()
 }
