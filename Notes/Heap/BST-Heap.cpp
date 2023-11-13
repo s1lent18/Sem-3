@@ -64,69 +64,111 @@ class BST
             return 1 + leftsum + rightsum;
         }
 
-        int * BSTtoHeap(Node *& root)
+        void fillArr(Node *& root, Node ** array, int  index) 
         {
-            int * array = new int[getsize(root)];
+            if (root != NULL) 
+            {
+                fillArr(root->left, array, index);
 
-            int index = 0;
+                array[index++] = root;
 
-            queue <Node*> Q;
+                fillArr(root->right, array, index);
+            }
+        }
 
+        Node ** inorder(Node *& root)
+        {
+            Node ** arr = new Node*[getsize(root)];
+
+            fillArr(root, arr, 0);
+
+            return arr;
+        } 
+
+        Node * toCBT(Node *& root)
+        {
             if(root != NULL)
             {
-                Q.push(root);
+                Node ** array = new Node*[getsize(root)];
 
-                while(!Q.empty())
+                array = inorder(root);
+
+                for(int i = 0; i < getsize(root); ++i)
                 {
-                    Node * temp = Q.front();
-
-                    Q.pop();
-
-                    array[index] = temp->data;
-
-                    index++;
-
-                    if(temp->left != NULL)
+                    if (2 * i + 1 < getsize(root)) 
                     {
-                        Q.push(temp->left);
+                        array[i]->left = array[2 * i + 1];
+                    } 
+                    else 
+                    {
+                        array[i]->left = NULL;
                     }
 
-                    if(temp->right != NULL)
+                    if (2 * i + 2 < getsize(root)) 
                     {
-                        Q.push(temp->right);
+                        array[i]->right = array[2 * i + 2];
+                    } 
+                    else 
+                    {
+                        array[i]->right = NULL;
                     }
                 }
+                return array[0];
             }
-
-            return array;
         }
 
-        void heapcorrection(int * arr, int size, int index)
+        void fill2(Node *& root, int * array, int index)
         {
-            int leftchild = (index * 2) + 1;
-
-            int rightchild = (index * 2) + 2;
-
-            int largest = index;
-
-            if(leftchild < size && arr[leftchild] > arr[largest])
+            if (root != NULL) 
             {
-                swap(arr[leftchild], arr[largest]);
-            }
+                fill2(root->left, array, index);
 
-            if(rightchild < size && arr[rightchild] > arr[largest])
-            {
-                swap(arr[rightchild], arr[largest]);
-            }
+                array[index++] = root->data;
 
-            if(index < size)
-            {
-                heapcorrection(arr, size, index + 1);
+                fill2(root->right, array, index);
             }
         }
 
-        
-};
+        int * fill(Node *& root)
+        {
+            int * arr = new int[getsize(root)];
+
+            fill2(root, arr, 0);
+
+            return arr;
+        }
+
+        void heapify(int * arr, int size, int i) 
+        {
+            int largest = i;
+            int left_child = 2 * i + 1;
+            int right_child = 2 * i + 2;
+
+            if (left_child < size && arr[left_child] > arr[largest]) 
+            {
+                largest = left_child;
+            }
+
+            if (right_child < size && arr[right_child] > arr[largest]) 
+            {
+                largest = right_child;
+            }
+
+            if (largest != i) 
+            {
+                swap(arr[i], arr[largest]);
+                heapify(arr, size, largest);
+            }
+        }
+
+        void convertToHeap(int * arr, int size) 
+        {
+            for (int i = size / 2 - 1; i >= 0; --i) 
+            {
+                heapify(arr, size, i);
+            }
+
+        }
 
 void printing(int * array, int size)
 {
@@ -148,13 +190,5 @@ int main()
 
     int * arr = new int[b->getsize(b->root)];
 
-    printing(b->BSTtoHeap(b->root), b->getsize(b->root));
-
-    cout << endl;
-
-    arr = b->BSTtoHeap(b->root);
-
-    b->heapcorrection(arr, b->getsize(b->root), 0);
-
-    printing(arr, b->getsize(b->root));
+    
 }

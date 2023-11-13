@@ -1,33 +1,43 @@
 #include <iostream>
 using namespace std;
 
+// 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+// 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+void printing(int * arr, int size)
+{
+    for(int i = 0; i < size; i++)
+    {
+        cout << arr[i] << ", ";
+    }
+}
+
 void heapcorrection(int * arr, int size, int index)
 {
-    int leftchild = (index * 2) + 1;
+    int leftchild = (index * 2) + 1;                             // 1
 
-    int rightchild = (index * 2) + 2;
+    int rightchild = (index * 2) + 2;                            // 2
 
-    int largest = index;
+    int largest = index;                                         // 0
 
-    if(leftchild < size && arr[leftchild] > arr[largest])
+    if(leftchild < size && arr[leftchild] > arr[largest])        // 1 < 10 && 2 > 1
     {
         largest = leftchild;
     }
-
-    if(rightchild < size && arr[rightchild] > arr[largest])
+    else if(rightchild < size && arr[rightchild] > arr[largest])
     {
-        largest = rightchild;
+        largest = rightchild; 
     }
 
     if(largest != index)
     {
-        swap(arr[largest], arr[index]);
-
-        heapcorrection(arr, size, index);
+        swap(arr[index], arr[largest]);
     }
+
+    heapcorrection(arr, size, largest);
 }
 
-void deleteroot(int * arr, int size)
+int deleteroot(int * arr, int size)
 {
     int lastinput = arr[size - 1];
 
@@ -36,14 +46,8 @@ void deleteroot(int * arr, int size)
     size--;
 
     heapcorrection(arr, size, 0);
-}
 
-void printing(int * arr, int size)
-{
-    for(int i = 0; i < size; i++)
-    {
-        cout << arr[i] << ", ";
-    }
+    return size;
 }
 
 int main()
@@ -65,10 +69,7 @@ int main()
 
     cout << endl;
 
-    for(int i = size; i >= 0; i--)
-    {
-        heapcorrection(array, size, i);
-    }
+    heapcorrection(array, size, 0);
 
     cout << "After heaping: " << endl;
 
