@@ -170,17 +170,12 @@ class BST
 
         }
 
-void printing(int * array, int size)
-{
-    for(int i = 0; i < size; i++)
-    {
-        cout << array[i] << ", ";
-    }
-}
+        void printing(int * array, int size)
+        {
+            for(int i = 0; i < size; i++)
+            {
+                cout << array[i] << ", ";
+            }
+        }
 
-int main()
-{
-    BST * b = new BST();
-
-    b->insert()
 }
