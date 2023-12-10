@@ -41,13 +41,11 @@ class Graph
 
             distance[startVertex % 65] = 0;
 
-            // Dijkstra's algorithm
             for (int count = 0; count < numberofvertices - 1; count++) 
             {
                 int minDistance = 1000000;
                 int minIndex;
 
-                // Find the vertex with the minimum distance
                 for (int v = 0; v < numberofvertices; v++) 
                 {
                     if (!visited[v] && distance[v] <= minDistance) 
@@ -57,10 +55,8 @@ class Graph
                     }
                 }
 
-                // Mark the selected vertex as visited
                 visited[minIndex] = true;
 
-                // Update distance values of the adjacent vertices
                 for (int v = 0; v < numberofvertices; v++) 
                 {
                     if (!visited[v] && adjacencymatrix[minIndex][v] && distance[minIndex] != 1000000 && distance[minIndex] + adjacencymatrix[minIndex][v] < distance[v])
@@ -70,7 +66,6 @@ class Graph
                 }
             }
 
-            // Print the distances
             cout << "Shortest distances from vertex " << startVertex << " to other vertices:" << endl;
             for (int i = 0; i < numberofvertices; i++) 
             {
