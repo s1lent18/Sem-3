@@ -69,8 +69,6 @@ class Stack
                 pop();
             }
         }
-
-
 };
 
 // int main()
