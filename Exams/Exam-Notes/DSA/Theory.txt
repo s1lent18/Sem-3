@@ -1,0 +1,52 @@
+
+State benefits of chaining over linear probing when implementing hash tables:
+    
+    - Chaining avoids clustering and provides better distribution of key-value pairs
+    - chaining allows for a dynamic ds, adjusting well to varying number of elements
+
+State differences between Kruskal, Prim and Dijkstra algorithms:
+
+    - Kruskal: Used for finding minimum spanning trees in a graph.
+    - Prim: Focuses on growing a single tree, starting from a chosen node.
+    - Dijkstra: Primarily for finding the shortest path between nodes in a weighted graph.
+
+State a scenario where you would avoid the use of linked lists:
+
+    - avoid linkedlist when constant-time random access or memory efficient is crucial
+      such as senarios with frequent insertions and deletions at arbitarory positions.
+
+Graph or Tree, Choose and explain which you use to plot a water distribution scheme in cities.
+
+    - Use a graph to represent the complex network of pipes and connections in a water
+      distribution scheme, as it allows cycles and multiple paths
+
+Explain the algorithm you would use to describe the 2nd best path in a 5 node graph.
+
+    - Implement Dijkstra's algorithm twice, excluding the first shortest path found each time.
+      The remaining shortest path is the second-best.
+
+How sorting can be performed without making comparisons?
+
+    - Use Radix Sort or Counting Sort to achieve sorting without making element comparisons.
+
+Why would you favor breadth-first search over depth-first search while doing graph traversal?
+
+    - Prefer Breadth-First Search for graph traversal when finding the shortest path
+      or covering all nodes efficiently, as it explores neighbors before deeper levels.
+
+State benefits of using a built-in Tree Abstract Data Type (ADT) in your code. 
+
+    - Abstraction: Simplifies code, focusing on high-level operations.
+    - Efficiency: Optimized, well-tested implementations for common tree operations.
+
+If the time comes and you have to prefer one over the other, how you justify the time 
+complexity over space complexity and vice versa. Write arguments on both preferences.
+
+    - Time Complexity: Prioritize when optimizing for execution speed or responsiveness.
+    - Space Complexity: Emphasize when memory conservation is critical or resources are limited.
+
+Why do you think allocating multiple linked list elements at a time is a good idea? Assume that 
+the linked list is actively used for incoming data.
+
+    - This is beneficial for efficiency, reducing memory allocation overheadand potentially
+      improving cache locality, especially in scenarios with frequent incoming data.
