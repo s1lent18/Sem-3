@@ -1,0 +1,65 @@
+Number Theory and crptography:
+
+    dividend / divisor = quotient
+    dividend % divisor = remainder
+
+    Congruence relation:
+
+        if a is congruent to b modulo m then:
+
+            a ≡ b (mod m)
+
+        example:
+            Determine whether 17 is congruent to 5 modulo 6
+
+            17 % 6 == 5
+
+            therefore we can say that 17 ≡ 5 mod 6
+
+        else if a is not congruent to b modulo m then:
+
+            a ≆ b (mod m)
+
+        example:
+            Determine whether 24 and 14 are congruent modulo 6.
+
+            since 24 % 6 != 14
+
+            therefore we can't say that 24 ≡ 14 mod 6
+
+    Hashing Functions:
+
+        an application of Congruence relations is Hashing.
+
+        for assigning a memory location to some value a hashing function is
+        used to calculate its location in the memory.
+
+        A common hashing function is like :
+
+            h(k) = k % [constant number]
+
+        the problem with this is a different numbers can have the same hashing
+        function so we solve this problem using linear probing
+
+        The above hashing function is modified to:
+
+            h(k, i) = (h(k) + i) mod [constant number]
+
+    Pseudorandom Numbers:
+
+        Formula:
+            x(n + 1) = (multiplier(x(n)) + increment) mod m ; x0 = constant number
+
+    UPCs:
+        consists of 12 digits, the sum of all the digits are used to compare with 
+        mod 10 if the answer is 10 then the number was a UPC else the number will
+        not be UPC. note that while summing all the digits, all the odd digits are
+        multiplied by 3 first.
+
+    ISBNs: 
+        consists of 10 digits, the sum of all the digits are used to compare with
+        mod 11, if the answer is 0 then the number is a valid ISBN else the number
+        won't be a valid ISBN. note that before summing all the digits will be 
+        multiplied by their respective index starting from 1.
+
+    
