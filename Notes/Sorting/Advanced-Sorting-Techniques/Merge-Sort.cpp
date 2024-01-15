@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// Best, Average and worst Time Case is O(n*log(n))
+
 void merge(int * arr, int l, int c, int h)
 {
     int size1 = c - l + 1;

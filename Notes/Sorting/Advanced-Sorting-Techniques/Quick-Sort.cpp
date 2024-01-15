@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+// Best and average time case: O(n*log(n))
+// Worst Time Case: O(n^2)
+
 int partition(int arr[], int left, int right)
 {
     int pivot = arr[right];
